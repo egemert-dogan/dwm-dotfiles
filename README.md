@@ -14,7 +14,7 @@ sudo make clean install
 cd ~/.config/dwmblocks/
 sudo make clean install
 ```
-##### For vim-ide (Vim with pathogen plugin manager and some plugins) # Optional
+#### For vim-ide (Vim with pathogen plugin manager and some plugins) # Optional
 ###### Warning! This steps will override your vimrc file and vim directory
 ```
 cp /tmp/.vimrc ~/ && cp /tmp/.vim ~/ -r
