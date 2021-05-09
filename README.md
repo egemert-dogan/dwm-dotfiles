@@ -2,6 +2,21 @@
 
 ![Screenshot](https://raw.githubusercontent.com/egemertdogan/dwm-dotfiles/main/screenshot.png)
 
+### Dependencies
+
+| Packge Name   | Needed For What |
+| ------------- | ------------- |
+| feh  | For setup wallpaper  |
+| picom  | For compositing  |
+| (Optional) numlockx | For auto enable numlock |
+| kitty | As a terminal |
+| flameshot | For screenshot tool |
+| dmenu | For application launcher |
+| (Optional) Qutebrowser | For browser |
+| pulseaudio | For audio control |
+| sysstat | For CPU monitoring |
+| FantasqueSansMono Nerd Font | For statusbar font |
+
 ### How to Setup
 ```
 cd /tmp
