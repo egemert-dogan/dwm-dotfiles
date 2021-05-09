@@ -60,34 +60,26 @@ static const Layout layouts[] = {
 
 /* commands */
 static char dmenumon[2] = "0"; /* component of dmenucmd, manipulated in spawn() */
-static const char *dmenucmd[] = { "launcher", NULL };
+static const char *dmenucmd[] = { "dmenu", NULL };
 static const char *termcmd[]  = { "kitty", NULL };
 static const char *resdwmcmd[] = { "killall", "dwm", NULL };
-/*static const char *rgbcmd[] = { "rgb", NULL };*/
 static const char *upvol[]   = { "pactl", "set-sink-volume", "0", "+5%",     NULL };
 static const char *downvol[] = { "pactl", "set-sink-volume", "0", "-5%",     NULL };
 static const char *mutevol[] = { "pactl", "set-sink-mute", "0", "toggle", NULL };
 static const char *qutebrowsercmd[] = { "qutebrowser", NULL };
 static const char *printscreencmd[] = { "flameshot", "gui", NULL };
-static const char *closemenucmd[] = { "powermenu", NULL };
-static const char *lockcmd[] = { "betterlockscreen", " -l", NULL };
-static const char *vimcmd[] = { "vim-ide", NULL };
 
 static Key keys[] = {
 	/* modifier                     key        function        argument */
 	{ MODKEY,                       XK_d,      spawn,          {.v = dmenucmd } },
 	{ MODKEY,             		XK_Return, spawn,          {.v = termcmd } },
 	{ MODKEY|ShiftMask,		XK_x,	   spawn,	   {.v = resdwmcmd } },
-	/*{ 0,			XK_Scroll_Lock, spawn, 	   {.v = rgbcmd } },*/
 	{ MODKEY,                       XK_F3,    spawn,          {.v = upvol   } },
 	{ MODKEY,                       XK_F2,    spawn,          {.v = downvol } },
 	{ MODKEY,                       XK_F4,     spawn,          {.v = mutevol } },
 	{ MODKEY|ShiftMask,             XK_s, 	   spawn, 	   {.v = downvol } },
 	{ MODKEY|ShiftMask,             XK_e,      spawn, 	   {.v = mutevol } },
 	{ MODKEY|ShiftMask,             XK_w, 	   spawn,          {.v = upvol } },
-	{ MODKEY|ShiftMask|ControlMask,	XK_q,	   spawn,	   {.v = closemenucmd } },
-	{ MODKEY|ShiftMask, 		XK_z,	   spawn,          {.v = lockcmd } },
-	{ MODKEY|ShiftMask,		XK_v,	   spawn, 	   {.v = vimcmd } },
 	{ MODKEY,                       XK_b,      togglebar,      {0} },
 	{ MODKEY,                       XK_j,      focusstack,     {.i = +1 } },
 	{ MODKEY,                       XK_k,      focusstack,     {.i = -1 } },
