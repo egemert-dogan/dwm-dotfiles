@@ -1,0 +1,8 @@
+#!/bin/bash
+
+#[ROFI]
+bash /home/egemert/.config/polybar/blocks/scripts/launcher.sh
+
+#[DMENU]
+#/usr/local/bin/dmenu_run 
+#-nb '#282828' -nf '#ebdbb2' -sb '#458588' -fn 'FantasqueSansMono Nerd Font' -l 20

@@ -1,0 +1,11 @@
+#!/bin/bash
+
+song="$(playerctl metadata | grep 'spotify xesam:title' | awk '{ print $3, $4, $5, $6, $7}')"
+artist="$(playerctl metadata | grep 'spotify xesam.albumArtist'  | awk '{ print $3, $4, $5, $6, $7}')"
+
+if [ song = "No players found" ]; then
+	
+	echo "No media is playing"
+else
+	echo $song "-" $artist
+fi
